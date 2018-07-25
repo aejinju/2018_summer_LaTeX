@@ -1,0 +1,51 @@
+\documentclass{article}
+
+% 문서의 7단계 구조
+% \part[*]{part name}
+% \chapter[*]{chaper name}
+% \section[*]{section name}
+% \subsection[*]{subsection name}
+% \subsubsection[*]{subsubsection name}
+% \paragraph[*]{paragraph name}
+% \subparagraph[*]{subparagraph name}
+% article에서는 5단계 구조를 가짐 - section부터 subparagraph까지
+
+\title{My first document}
+\date{\today}
+\author{Aejin Ju}
+
+\begin{document}
+
+	\maketitle
+	\pagenumbering{gobble}
+	
+	\newpage
+	\tableofcontents
+	\pagenumbering{gobble}
+
+	\newpage
+	\pagenumbering{arabic}
+	
+	% 1) {*} 유무에 따른 결과 비교하기
+	\section{Section}
+	
+	Hello World!
+
+	\subsection{Subsection}
+	
+	Structuring a document is easy!
+	
+	\subsubsection{Subsubsection}
+	
+	More text.
+	
+	\paragraph{Paragraph}
+	
+	Some more text.
+	
+	\subparagraph{Subparagraph}	
+	
+	...
+	
+\end{document}
+

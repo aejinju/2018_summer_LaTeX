@@ -1,0 +1,21 @@
+\documentclass[12pt]{article}
+
+\usepackage{kotex}
+\usepackage{array}
+
+\begin{document}
+
+	% 2) 열의 너비 & 상하 정렬 지정하기
+	% 너비 지정 : cm 같은 절대값과 0.2\linewidth 같은 상대값 쓸 수 있음
+	%           0.2\linewidth는 현재 사용이 가능한 전체 길이의 20%를 의미함
+	% 열의 상하 정렬 : b(위쪽 정렬), m(가운데 정렬), p(아래쪽 정렬)	
+	
+	\begin{tabular}{ | b{2cm} | b{2cm} | b{0.2\linewidth} | }
+		\hline
+		이 문장은 어디에 정렬될까요? & 이 문장은 어디? & 이 문장은? \\ 
+		\hline
+		이 문장은 어디에 정렬될까요? & 이 문장은 어디? & 이 문장은? \\		
+		\hline
+	\end{tabular}	
+
+\end{document}

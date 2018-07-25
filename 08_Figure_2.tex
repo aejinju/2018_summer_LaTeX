@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage{kotex}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\begin{document}
+
+	Figure~\ref{fig:coffee}은 계수의 합이 1 이하인 예이다.
+	
+	% 여러개의 그림 넣기
+	% \linewidth의 계수의 합은 1 이하여야 함
+	\begin{figure}[h!]
+  		\centering
+  		\begin{subfigure}[b]{0.4\linewidth}
+    		\includegraphics[width=\linewidth]{coffee.jpg}
+    		\caption{Coffee.}
+  		\end{subfigure}
+  		\begin{subfigure}[b]{0.4\linewidth}
+    		\includegraphics[width=\linewidth]{coffee.jpg}
+    		\caption{More coffee.}
+  		\end{subfigure}
+  		\caption{The same cup of coffee. Two times.}
+  		\label{fig:coffee}
+	\end{figure}
+
+	Figure~\ref{fig:coffee3}은 계수의 합이 1 이상인 예이다.
+	
+	% \linewidth의 계수의 합이 1 이상인 경우
+	\begin{figure}[h!]
+  		\centering
+  		\begin{subfigure}[b]{0.2\linewidth}
+    		\includegraphics[width=\linewidth]{coffee.jpg}
+     		\caption{Coffee.}
+  		\end{subfigure}
+  		\begin{subfigure}[b]{0.2\linewidth}
+    		\includegraphics[width=\linewidth]{coffee.jpg}
+    		\caption{More coffee.}
+  		\end{subfigure}
+  		\begin{subfigure}[b]{0.2\linewidth}
+    		\includegraphics[width=\linewidth]{coffee.jpg}
+    		\caption{Tasty coffee.}
+  		\end{subfigure}
+  		\begin{subfigure}[b]{0.5\linewidth}
+    		\includegraphics[width=\linewidth]{coffee.jpg}
+    		\caption{Too much coffee.}
+  		\end{subfigure}
+  		\caption{The same cup of coffee. Multiple times.}
+  		\label{fig:coffee3}
+	\end{figure}
+	
+\end{document}

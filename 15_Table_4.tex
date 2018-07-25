@@ -1,0 +1,19 @@
+\documentclass[12pt]{article}
+
+\usepackage{kotex}
+
+\begin{document}
+
+	% 4) 가로선 일부만 긋기
+	% \cline{시작 열 - 끝 열}
+	
+	\begin{tabular}{ c | c | c }
+		\hline
+		항목 & 내용 & 비고 \\ 
+		\hline  
+		& 소형 & 저가 \\ \cline{2-3}
+		종류 & 중형 & 권장 \\ \cline{2-3}
+		& 대형 & 고가 \\ \hline
+	\end{tabular}
+	
+\end{document}

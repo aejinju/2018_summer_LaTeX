@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+
+\usepackage{kotex}
+\usepackage{multirow}
+
+\begin{document}
+
+	% 7) 열의 간격, 행의 간격
+	% 열의 간격 : \renewcommand{\tabcolsep}{...}
+	% 행의 간격 : \renewcommand{\arraystretch}{...}
+	
+	\renewcommand{\tabcolsep}{12pt}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{ l | l | l }
+		\hline
+		& m & cm \\ 
+		\hline 
+		SLM-600 & 6.0 & 600 \\ 
+		SLM-800 & 8.0 & 800 \\ 
+		\hline
+	\end{tabular}
+	
+\end{document}

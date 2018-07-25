@@ -1,0 +1,19 @@
+\documentclass[12pt]{article}
+
+\usepackage{kotex}
+
+\begin{document}
+
+	% 5) 열 합치기
+	% \multicolumn{열 수}{열 서식}{내용}
+	
+	\begin{tabular}{ c | c | c }
+		\hline
+		항목 & 내용 & 비고 \\ 
+		\hline  
+		& 소형 & 저가 \\ \cline{2-3}
+		종류 & 중형 & 권장 \\ \cline{2-3}
+		& \multicolumn{2}{r}{대형.} \\ \hline
+	\end{tabular}
+	
+\end{document}

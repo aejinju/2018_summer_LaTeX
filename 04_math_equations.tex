@@ -1,0 +1,80 @@
+\documentclass[fleqn]{article}
+
+\usepackage{amsmath}
+\usepackage{enumerate}
+
+\begin{document}
+
+	\section{Using inline math}
+	
+	\begin{enumerate}
+	
+		\item
+		% 행중 수식 : \(와 \) 사이, $와 $ 사이, \begin{math}와 \end{math} 사이에 들어감
+		This formula $ f(x) = x^2 $ is an example.
+		
+		\item
+		% 별도 단락으로 큰 수학 기호를 사용하는 방정식 등의 수학식 : \[와 \] 사이, $$와 $$ 사이,
+		%							\begin{displaymath}와 \end{displaymath} 사이
+		This formula 
+		\begin{displaymath} 
+			f(x) = x^2 
+		\end{displaymath}
+		is an example.	
+	
+	\end{enumerate}
+
+
+
+	\section{The equation and align environment}
+	
+	\begin{enumerate}
+
+	% amsmath package 이용
+	% 기본적으로 수식은 가운데 정렬
+	
+	% equation : 수식이 한줄인 경우
+	% align : 수식이 여러줄인 경우
+		
+	% 수식 내 줄바꿈은 \\ 이용
+	
+		\item
+		% 1) name 뒤에 *의 역할 확인하기
+		\begin{equation*}
+			1 + 2 = 3	
+		\end{equation*}
+	
+	 	\item
+		\begin{equation*}
+			1 = 3 - 2	
+		\end{equation*}
+	
+		\item
+		% 2) &를 이용 여부에 따른 정렬 확인하기
+		\begin{align*}
+			1 + 2 = 3 \\
+			1 = 3 - 2
+		\end{align*}
+	
+	\end{enumerate}	
+	
+	\section{Fractions and more}
+	
+	% 분수 : \frac{}{}
+	% 적분 : \int_{}^{}
+	\begin{enumerate}
+		
+		\item
+		\begin{align*}
+			f(x) &= x^2 \\
+			g(x) &= \frac{1}{x} \\
+			F(x) &= \int_a^b \frac{1}{3}x^3 dx
+		\end{align*}
+	
+		\item
+		This formula $ g(x) = \frac{1}{x} $ is an example. \\ 
+
+	\end{enumerate}
+	
+\end{document}
+

@@ -1,0 +1,64 @@
+\documentclass[fleqn]{article}
+
+\usepackage{amsmath}
+\usepackage{enumerate}
+
+\begin{document}
+
+	\section{Matrices}
+	
+	\begin{enumerate}
+	
+		\item 
+		% 1) [], \left[와 \right] 비교, 확인하기
+		$$
+		[
+		\begin{matrix}
+			1 & 0 \\
+			0 & 1
+		\end{matrix}
+		]
+		$$
+		
+		\item 
+		% 2) matrix, pmatrix, bmatrix, vmatrix, Vmatrix 확인하기
+		% 3) 수식에서 띄워쓰기 : \quad, \qquad
+		$$
+		\begin{matrix}
+			1 & 0 \\
+			0 & 1
+		\end{matrix}
+		\qquad
+		\begin{pmatrix}
+			1 & 0 \\
+			0 & 1
+		\end{pmatrix}
+		\qquad
+		\begin{bmatrix}
+			1 & 0 \\
+			0 & 1
+		\end{bmatrix}
+		\qquad	
+		\begin{vmatrix}
+			1 & 0 \\
+			0 & 1
+		\end{vmatrix}
+		\qquad	
+		\begin{Vmatrix}
+			1 & 0 \\
+			0 & 1
+		\end{Vmatrix}
+		$$
+		
+		\item 
+		% 3) array 이용하여 matrix 만들기
+		$$
+		\begin{array}{c c}
+			1 & 0 \\
+			0 & 1	
+		\end{array}
+		$$
+	
+	\end{enumerate}
+	
+\end{document}

@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+
+\usepackage{kotex}
+\usepackage{multirow}
+
+\begin{document}
+
+	% 8) 캡션 
+	% \caption{...}
+	% \label{...}
+	
+	% \begin{center} ... \end{center} : 가운데 정렬
+	% \textbf : 진하게
+	
+	\begin{table}[h!]
+		\begin{center}
+			\caption{Your first table.}
+			\label{tab:Values}
+			\begin{tabular}{ l | c | r }
+				\hline
+				\textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3} \\
+				$\alpha$ & $\beta$ & $\gamma$ \\
+				\hline 
+				1 & 1110.1 & a \\ 
+				2 & 10.1 & b \\
+				3 & 23.113231 & c \\ 
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{table}
+	
+	Table~\ref{tab:Values}은 $\alpha, \beta, \gamma$의 값을 알려준다.
+	
+\end{document}

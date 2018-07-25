@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+
+\usepackage{kotex}
+\usepackage{enumerate}
+
+\begin{document}
+
+\begin{enumerate}
+
+	\item 
+	공백 : 공백문자(whitespace), 즉 빈 칸(blank), 탭(tab) 등은 \LaTeX에서 모두 동일하게 "스페이스" 로 처리함
+
+	\item
+	특수문자 : \#, \$, \%, \^{}, \&, \_, \{, \}, \~{}, $\setminus$는 \LaTeX에서 특별한 의미를 갖거나 어떤 글꼴로도 나타낼 수 없음
+	
+	\item 
+	\LaTeX 명령 : 백슬래시 $\setminus$로 시작하여 문자(letter)만으로 이루어진 이름을 갖고 대소문자를 구분함, 옵션 인자(optional parameters)가 필요한 경우에는 명령 바로 다음에 대괄호 []를 쓰고 그 안에 씀
+
+	\item
+	주석 : \% 문자를 만나면 그 줄(행)의 나머지 부분과 줄바꿈을 무시함, 긴 주석문을 쓰려면 verbatim 패키지가 제공하는 comment 환경을 쓸 수 있음
+
+\end{enumerate}
+
+\end{document}

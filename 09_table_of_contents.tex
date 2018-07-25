@@ -1,0 +1,43 @@
+\documentclass{article}
+
+\usepackage{setspace}
+
+\begin{document}
+
+	% 1) 본문 목차 만들기
+	%    두번 compile 하기
+	\tableofcontents
+	\newpage
+	
+	\section{Section}
+
+		Dummy text
+
+		\begin{figure}[h!]
+  			\caption{Dummy figure}
+		\end{figure}
+
+
+	\subsection{Subsection}
+
+		Dummy text
+
+		\begin{table}[h!]
+  			\caption{Dummy table}
+		\end{table}
+		
+	\newpage
+
+	% 2) 그림 목차, 표 목차 만들기
+	\begin{appendix}
+  		\listoffigures
+  		
+  		% 3) 그림 목차와 표 목차 사이의 줄간격 조절
+  		%\singlespacing
+  		\doublespacing
+  		
+  		\listoftables
+	\end{appendix}
+
+
+\end{document}
