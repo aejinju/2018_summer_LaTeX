@@ -1,0 +1,30 @@
+\documentclass{report}
+
+\usepackage[hangul]{kotex}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{setspace}
+
+% 첫문단부터 들여쓰기
+% LaTeX의 기본 설정은 section, subsection 등을 선언하고 
+% 바로 다음에 오는 문단은 들여쓰기가 없게 하고, 
+% 다음 문단부터 계속 들여쓰기를 하는 것임
+\usepackage{indentfirst}
+\setlength{\parindent}{10pt}
+
+% footnote 들여쓰기
+\usepackage[footnote,printonlyused]{acronym}
+\usepackage{scrextend}
+\deffootnote[1.0em]{1.0em}{10em}{\textsuperscript{\thefootnotemark}\,\enskip}
+
+\begin{document}
+
+	\include{introduction}
+	\include{chapter2}
+	\include{chapter3}
+	
+	% 참고문헌	
+	\bibliographystyle{ieeetr}
+	\bibliography{aejin_thesis} 
+	
+\end{document}  
